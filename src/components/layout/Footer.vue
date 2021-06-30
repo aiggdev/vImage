@@ -1,7 +1,7 @@
 <template>
 
   <div id="footer">
-    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License</a>. 
+    This work is licensed under a <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons License</a>. 
     <br>v. 0.01 - 
     <a href="https://github.com/aiggdev/vImage">Wanna help make this better?</a>
   </div>
