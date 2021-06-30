@@ -33,6 +33,7 @@ export default {
       photos,
     };
   },
+
   computed: {
     photo() {
       return this.photos.find((photo) => {
@@ -51,7 +52,7 @@ export default {
     },
     
   },
-};
+}
 </script>
 
 <style>
@@ -61,18 +62,22 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.75);
     display: grid;
     grid-gap: 1rem;
   }
 
   .lightbox img {
-    margin: 1rem auto;
+    margin: 1rem 0 0 -9px;
     height: 99%;
     grid-template-rows: 1fr;
     border-radius: 0 0.66rem 0 0;
     position: inherit;
     z-index: 98;
+    border:9px solid rgb(242, 242, 242, .1);
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.21);
   }
 
   .lightbox-info {
@@ -87,7 +92,7 @@ export default {
     margin:1.5rem 0 0 .33rem;
     padding: .66rem;
     border-radius: 0 0 0.66rem 0;
-    border:1px solid #F2F2F2;
+    border:3px solid rgb(242, 242, 242, .33);
     box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.21);
     -webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.21);

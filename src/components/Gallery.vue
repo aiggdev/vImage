@@ -90,7 +90,7 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: .66rem;
     max-width: 99rem;
-    margin:  .66rem auto;
+    margin: .66rem auto;
     padding: 0 .66rem .66rem .66rem;
   }
 
@@ -109,7 +109,7 @@ export default {
   .gallery-images:hover{
     opacity: 1;
     border: 9px solid #e2e2e2;
-     box-shadow: 9px 9px 16px 0px rgba(0,0,0,0.1);
+    box-shadow: 9px 9px 16px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 9px 9px 16px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 9px 9px 16px 0px rgba(0,0,0,0.1);
   }

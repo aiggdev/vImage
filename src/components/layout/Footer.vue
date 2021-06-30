@@ -3,7 +3,7 @@
   <div id="footer">
     This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License</a>. 
     <br>v. 0.01 - 
-    <a href="">Wanna help make this better?</a>
+    <a href="https://github.com/aiggdev/vImage">Wanna help make this better?</a>
   </div>
   
 </template>
@@ -30,8 +30,8 @@ export default {
     width:96%;
     grid-template-rows: 1fr;
     display: block;
-    background-color:rgb(13, 13, 13, .99);
-    color: #F2F2F2;
+    background-color:rgb(13, 13, 13, .066);
+
     padding:.96rem;
     font-weight:700;
     margin: 0 0 1rem 1rem;
