@@ -1,4 +1,5 @@
 <template>
+
   <div class="v-image-gallery">
       
     <Header />
@@ -21,9 +22,11 @@
     <Footer />
 
   </div>
+
 </template>
 
 <script>
+
 import photos from '@/photos.json'
 import Header from '@/components/layout/Header.vue'
 import Footer from '@/components/layout/Footer.vue'
@@ -48,7 +51,7 @@ export default {
     }
   },
 
-   components: {
+  components: {
      Header,
      Footer,
     },
@@ -65,18 +68,19 @@ export default {
               ++count
         }
       return count
+    },
+
+    onChangePage(pageOfItems) {
+        // update page of items
+        this.pageOfItems = pageOfItems;
+    },
+
+    scrollToTop() {
+      window.scrollTo(0,0)
+    }, 
+
   },
 
-  onChangePage(pageOfItems) {
-      // update page of items
-      this.pageOfItems = pageOfItems;
-  },
-
-  scrollToTop() {
-    window.scrollTo(0,0)
-  } 
-
-  },
   mounted (){
       console.log(this.countPhotos(photos))
     }
@@ -85,12 +89,13 @@ export default {
 </script>
 
 <style>
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: .66rem;
     max-width: 99rem;
-    margin: 1.66rem auto;
+    margin: 1rem auto;
     padding: 0 .66rem .66rem .66rem;
   }
 
