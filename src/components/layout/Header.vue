@@ -5,16 +5,16 @@
     <div class="dropdown">
      <nav role="navigation">
         <ul>
-          <li><a href="#" class="d-block link-dark text-decoration-none dropdown-toggle">
-                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-              </a>
-            <ul class="dropdown">
-              <li><a href="#">Sub-1</a></li>
-              <li><a href="#">Sub-2</a></li>
-              <li><a href="#">Sub-3</a></li>
+          <li>
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle">
+                <img src="https://avatars.githubusercontent.com/u/69393462?v=4" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">User Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">Upload Photos</a></li>
             </ul>
           </li>
-
         </ul>
       </nav>
     </div>
@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style>
+
   #header{
     display: block;
     width:99%;
@@ -51,46 +52,60 @@ export default {
   }
 
   .dropdown{
-     display: block;
+    display: block;
     float:right;
     margin: -1rem 3rem 0 0;
   }
 
+  .dropdown-menu{
+    background-color: #fff;
+    display: block;
+    float:right;
+    margin: 0 3rem 0 0;
+    text-align: left!important;
+    padding: 0;
+  }
+
+  .dropdown-menu li{
+    font-size:.66rem;
+    padding-left:5px;
+  }
+
   li {
- display: block;
- transition-duration: 0.5s;
-}
+    display: block;
+    transition-duration: 0.5s;
+  }
 
-li:hover {
-  cursor: pointer;
-}
+  li:hover {
+    cursor: pointer;
+  }
 
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: sticky;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  display: none;
-}
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: sticky;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+  }
 
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
+  ul li:hover > ul, ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
 
-ul li ul li {
-  clear: both;
-  width: 100%;
-}
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
 
-.rounded-circle {
+  .rounded-circle {
     border-radius: 50%!important;
-}
+    margin:0 0 0 .33rem;
+  }
 
-.dropdown-toggle::after {
+  .dropdown-toggle::before {
     display: inline-block;
     margin-left: .255em;
     vertical-align: .255em;
@@ -99,24 +114,23 @@ ul li ul li {
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
-}
+  }
 
-.dropdown-toggle {
+  .dropdown-toggle {
     outline: 0;
     white-space: nowrap;
+  }
 
-}
-
-.text-decoration-none {
+  .text-decoration-none {
     text-decoration: none!important;
-}
+  }
 
-.d-block {
+  .d-block {
     display: block!important;
-}
+  }
 
-.link-dark {
+  .link-dark {
     color: #212529;
-}
+  }
 
 </style>
