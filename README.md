@@ -11,6 +11,7 @@ So I of course decided to come up with my own solution.  I started with a variet
 - Add Upload
 - Vue 3
 - Admin Area
+- Improve user drop down menu while keeping it as simple as possible
 
 So stay tuned and feel free to let me kow if you would like to help work on vImage Gallery.
 
