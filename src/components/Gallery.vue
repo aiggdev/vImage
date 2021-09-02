@@ -1,9 +1,9 @@
 <template>
 
   <div class="v-image-gallery">
-      
+
     <Header />
-  
+
     <div class="gallery">
       <div class="gallery-panel" v-for="item in pageOfItems" :key="item.id">
         <router-link :to="`/photo/${item.id}`">
@@ -14,8 +14,8 @@
 
     <div class="pagination">
       <jw-pagination :items="photos" @changePage="onChangePage"></jw-pagination>
-      <span style='font-size:33px;' class="to-top">
-        <a @click="scrollToTop" class="scroll-to-top">&#8613;</a>  
+      <span style="font-size:33px;" class="to-top">
+        <a @click="scrollToTop" class="scroll-to-top">&#8613;</a>
       </span>
     </div>
 
@@ -27,9 +27,9 @@
 
 <script>
 
-import photos from '@/photos.json'
-import Header from '@/components/layout/Header.vue'
-import Footer from '@/components/layout/Footer.vue'
+import photos from '@/photos.json';
+import Header from '@/components/layout/Header.vue';
+import Footer from '@/components/layout/Footer.vue';
 
 export default {
 
@@ -41,7 +41,7 @@ export default {
       type: Number,
       default: 8
     },
-     
+
   },
 
   data() {
@@ -52,39 +52,39 @@ export default {
   },
 
   components: {
-     Header,
-     Footer,
-    },
-  
+    Header,
+    Footer,
+  },
+
   methods: {
     thumbUrl(filename) {
       return require(`../assets/images/thumbnails/${filename}`);
     },
 
     countPhotos(obj) {
-      var count = 0;
+      let count = 0;
         for(var prop in obj) {
             if(obj.hasOwnProperty(prop))
               ++count
         }
-      return count
+      return count;
     },
 
     onChangePage(pageOfItems) {
-        // update page of items
-        this.pageOfItems = pageOfItems;
+      // update page of items
+      this.pageOfItems = pageOfItems;
     },
 
     scrollToTop() {
-      window.scrollTo(0,0)
-    }, 
+      window.scrollTo(0, 0);
+    },
 
   },
 
-  mounted (){
-      console.log(this.countPhotos(photos))
-    }
+  mounted() {
+    console.log(this.countPhotos(photos))
   }
+}
 
 </script>
 
