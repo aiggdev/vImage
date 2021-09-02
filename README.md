@@ -18,7 +18,7 @@ You can view the 0.02 version of vImage at [vImage.net](https://vimage.net/)
 - tune prettify, impliment my version of clean consistent code
 - ~~Pagination implimentiation~~ 
 
-So stay tuned and feel free to [let me kow if you would like to help](https://twitter.com/aiggdev) work on vImage Gallery.
+So stay tuned and feel free to [let me know if you would like to help](https://twitter.com/aiggdev) work on vImage Gallery.
 
 ## Project setup
 ```
