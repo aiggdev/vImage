@@ -10,12 +10,16 @@ You can view the 0.02 version of vImage at [vImage.net](https://vimage.net/)
 
 ### Ideas
 
+##### Backend
+- FastAPI or simple Axios backend
 - Add Auth
 - Add Upload
-- Vue 3
 - Admin Area
+
+##### Front End
+- Upgrade to Vue 3
 - Improve user drop down menu while keeping it as simple as possible
-- tune prettify, impliment my version of clean consistent code
+- prettify, lint, etc for consistent code
 - ~~Pagination implimentiation~~ 
 
 So stay tuned and feel free to [let me know if you would like to help](https://twitter.com/aiggdev) work on vImage Gallery.
