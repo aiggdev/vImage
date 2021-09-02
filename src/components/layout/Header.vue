@@ -38,18 +38,18 @@ export default {
 
 <style>
 
-  #header{display: block; width:99%; grid-template-rows: 1fr; margin:1rem 0 0 1rem;}
+  #header{display: block; width:95%; grid-template-rows: 1fr; margin:1rem 0 0 1rem;}
   
   #vImage{opacity: 0.9;}
   #vImage:hover{opacity: 1;}
 
-  .dropdown{display: block; float:right; margin: -1rem 3rem 0 0;}
+  .dropdown{display: block; float:right; margin: -1rem 0 0 0;}
 
   .dropdown-menu{
     background-color: #fff;
     display: block;
     float:right;
-    margin: 0 1rem 0 0;
+    margin: 0;
     text-align: left!important;
     padding: 0;
   }

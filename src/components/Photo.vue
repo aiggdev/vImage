@@ -1,18 +1,18 @@
 <template>
   <div class="lightbox" @click.self="closeLightbox">
-   
+
     <img :src="photoUrl(photo.filename)">
-   
+
     <div class="lightbox-info">
       <div class="lightbox-info-inner">
-        
+
         <div class="photo-title" v-if="photo.title">
           <span class="close-x" @click.self="closeLightbox">&#10006;</span>
            {{ photo.title }}
         </div>
 
         <p v-if="photo.location" class="location"><small>{{ photo.location }}</small></p>
-  
+
         <p v-if="photo.source" class="photo-source">
           <small>via <a rel="nofollow" :href="photo.source.url">{{ photo.source.name }}</a></small>
         </p>
@@ -50,7 +50,7 @@ export default {
     closeLightbox() {
       this.$router.push('/');
     },
-    
+
   },
 }
 </script>
@@ -60,8 +60,8 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     background-color: rgba(0, 0, 0, 0.75);
     display: grid;
     grid-gap: 1rem;

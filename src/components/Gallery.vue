@@ -94,9 +94,9 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: .66rem;
-    max-width: 99rem;
+    max-width: 99%;
     margin: 1rem auto;
-    padding: 0 .66rem .66rem .66rem;
+    padding: 0;
   }
 
   .gallery-panel img {

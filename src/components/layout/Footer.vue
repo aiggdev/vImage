@@ -27,11 +27,10 @@ export default {
 <style>
 
   #footer{
-    width:96%;
+    width:90%;
     grid-template-rows: 1fr;
     display: block;
-    background-color:rgb(13, 13, 13, .066);
-
+    background: linear-gradient(90deg, rgba(231,231,231,1) 0%, rgba(242,242,242,0.819765406162465) 49%, rgba(255,255,255,1) 90%);
     padding:.96rem;
     font-weight:700;
     margin: 0 0 1rem 1rem;
