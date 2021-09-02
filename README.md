@@ -5,6 +5,9 @@ One day I was thinking "I am going to go find a super simple Vue image gallery s
 
 So I of course decided to come up with my own solution.  I started with a variety of tutorials and have ended up with what is included in this repository.  I plan on working on it as time permits. It's *very* early in development - I still need to add some basics:
 
+## Current Version
+You can view the 0.02 version of vImage at [vImage.net](https://vimage.net/)
+
 ### Ideas
 
 - Add Auth
